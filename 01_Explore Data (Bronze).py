@@ -1,6 +1,6 @@
 # Databricks notebook source
 # MAGIC %md 
-# MAGIC You may find this series of notebooks at https://github.com/databricks-industry-solutions/segmentation.git. For more information about this solution accelerator, visit https://www.databricks.com/solutions/accelerators/customer-segmentation.
+# MAGIC You may find this series of notebooks at https://github.com/PulkitXChadha/segmentation.git. For more information about this solution accelerator, visit https://www.databricks.com/solutions/accelerators/customer-segmentation.
 
 # COMMAND ----------
 
@@ -18,10 +18,6 @@
 
 # COMMAND ----------
 
-# MAGIC %run "./config/Data Extract"
-
-# COMMAND ----------
-
 # MAGIC %md From there, we might prepare the data as follows:
 
 # COMMAND ----------
@@ -32,11 +28,8 @@ from pyspark.sql.functions import min, max
 
 # COMMAND ----------
 
-# DBTITLE 1,Create Database
+# DBTITLE 1,Use Database
 # MAGIC %sql
-# MAGIC 
-# MAGIC DROP DATABASE IF EXISTS journey CASCADE;
-# MAGIC CREATE DATABASE journey;
 # MAGIC USE journey;
 
 # COMMAND ----------
